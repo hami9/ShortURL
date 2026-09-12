@@ -1,0 +1,19 @@
+{
+  "name": "shorturl",
+  "version": "1.0.0",
+  "description": "High-performance URL shortener with SHA-256 Base64URL hashing and persistent Key-Value store",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/shortener.test.js"
+  },
+  "keywords": [
+    "url-shortener",
+    "base64",
+    "hash",
+    "key-value-store"
+  ],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Local Key-Value Data and temporary flush files
+data/store.json
+data/*.tmp.*
+test/test_store.json
+
+# Environment and OS files
+.env
+.DS_Store
+Thumbs.db
