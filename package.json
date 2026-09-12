@@ -1,19 +1,49 @@
 {
-  "name": "shorturl",
+  "name": "@hami9/shorturl",
   "version": "1.0.0",
-  "description": "High-performance URL shortener with SHA-256 Base64URL hashing and persistent Key-Value store",
+  "description": "High-performance zero-dependency URL shortener engine with SHA-256 Base64URL hashing and persistent Key-Value store",
   "main": "src/index.js",
   "type": "module",
+  "bin": {
+    "shorturl-server": "src/server.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./server": "./src/server.js",
+    "./hasher": "./src/hasher.js",
+    "./store": "./src/kvStore.js"
+  },
   "scripts": {
     "start": "node src/server.js",
     "test": "node test/shortener.test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hami9/ShortURL.git"
+  },
   "keywords": [
     "url-shortener",
     "base64",
+    "base64url",
+    "sha256",
     "hash",
-    "key-value-store"
+    "key-value-store",
+    "nodejs",
+    "zero-dependencies",
+    "rest-api"
   ],
-  "author": "",
-  "license": "MIT"
+  "author": "hami (https://github.com/hami9)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hami9/ShortURL/issues"
+  },
+  "homepage": "https://github.com/hami9/ShortURL#readme",
+  "files": [
+    "src",
+    "README.md",
+    "whatamibuild.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
