@@ -1,5 +1,7 @@
 # ShortURL
 
+[![Node.js CI](https://github.com/hami9/ShortURL/actions/workflows/test.yml/badge.svg)](https://github.com/hami9/ShortURL/actions/workflows/test.yml)
+
 A lightweight, zero-dependency URL shortener engine built with Node.js. It hashes long URLs using SHA-256, encodes a 6-byte slice into URL-safe Base64 (8 characters), and stores mappings in a persistent in-memory Key-Value store with atomic file persistence.
 
 ## Features
